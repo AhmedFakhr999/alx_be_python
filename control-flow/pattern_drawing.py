@@ -1,5 +1,6 @@
 size = int(input('Enter the size of the pattern: '))
-pattern = size
-while size > 0:
-    print('*' * pattern)  # Use 'pattern' (constant) instead of 'size' (decreasing)
-    size -= 1
+
+for i in range(size):          # Outer loop for rows
+    for j in range(size):      # Inner loop for columns
+        print('*', end='')     # Print each star without newline
+    print()                    # New line after each row
